@@ -1,19 +1,26 @@
 package edu.dosw.restaurante.sakura_sushi.model.domain;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter 
-@RequiredArgsConstructor 
+@Data 
+@AllArgsConstructor 
+@NoArgsConstructor 
+@Builder  
 public class Plato {
     
-    private final Long id;
-    private final String nombre;
-    private final Double precio;
-    private final String categoria;
-    private final Boolean disponible;
+    private Long id;
+    private String nombre;
+    private Double precio;
+    private String categoria;
+    private Boolean disponible;
 
     public Boolean esValido() {
-        return false;
+        return Boolean.TRUE.equals(disponible);
     }
+
+    public void activar() { this.disponible = true; }
+    public void desactivar() { this.disponible = false; }
 }

@@ -5,5 +5,18 @@ public enum EstadoPedido {
     EN_PREPARACION,
     LISTO,
     ENTREGADO,
-    CANCELADO
+    CANCELADO;
+
+    public boolean puedeTransicionarA(EstadoPedido siguiente) {
+        return switch (this) {
+            case RECIBIDO       -> siguiente == EN_PREPARACION || siguiente == CANCELADO;
+            case EN_PREPARACION -> siguiente == LISTO;
+            case LISTO          -> siguiente == ENTREGADO;
+            default             -> false;
+        };
+    }
+
+    public boolean esCancelable() {
+        return this == RECIBIDO;
+    }
 }
