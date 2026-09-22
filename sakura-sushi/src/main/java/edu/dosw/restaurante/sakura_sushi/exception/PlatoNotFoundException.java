@@ -1,5 +1,5 @@
 package edu.dosw.restaurante.sakura_sushi.exception;
 
-public class PlatoNotFoundException {
+public class PlatoNotFoundException extends RuntimeException {
     
 }
