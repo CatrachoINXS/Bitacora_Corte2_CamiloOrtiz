@@ -16,6 +16,7 @@ public class Plato {
     private Double precio;
     private String categoria;
     private Boolean disponible;
+    private String descripcion;
 
     public Boolean esValido() {
         return Boolean.TRUE.equals(disponible);
