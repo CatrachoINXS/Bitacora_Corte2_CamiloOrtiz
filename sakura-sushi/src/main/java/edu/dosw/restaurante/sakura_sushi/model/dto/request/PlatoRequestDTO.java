@@ -1,5 +1,7 @@
 package edu.dosw.restaurante.sakura_sushi.model.dto.request;
 
+import java.math.BigDecimal;
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -19,7 +21,7 @@ public class PlatoRequestDTO {
 
     @NotNull(message = "El precio es obligatorio")
     @Positive(message = "El precio debe ser mayor a cero")
-    private Double precio;
+    private BigDecimal precio;
 
     @NotBlank(message = "La categoría es obligatoria")
     private String categoria;

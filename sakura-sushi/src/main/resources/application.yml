@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: sakura-sushi
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restaurante
+    username: postgres
+    password: CarOrt67
+  jpa:
+    hibernate:
+      ddl-auto: update   # crea/actualiza tablas automáticamente
+    show-sql: true       # muestra las queries en consola — útil en desarrollo
+    properties:
+      hibernate:
+        format_sql: true
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/restaurante

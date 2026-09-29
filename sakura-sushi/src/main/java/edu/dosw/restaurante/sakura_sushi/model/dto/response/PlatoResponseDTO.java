@@ -1,5 +1,7 @@
 package edu.dosw.restaurante.sakura_sushi.model.dto.response;
 
+import java.math.BigDecimal;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,7 +15,7 @@ public class PlatoResponseDTO {
     
     private Long id;
     private String nombre;
-    private Double precio;
+    private BigDecimal precio;
     private String categoria;
     private Boolean disponible;
 }
