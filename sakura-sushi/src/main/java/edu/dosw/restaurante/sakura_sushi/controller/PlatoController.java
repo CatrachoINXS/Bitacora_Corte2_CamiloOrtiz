@@ -29,8 +29,7 @@ import jakarta.validation.Valid;
 @RestController 
 @RequestMapping("/api/v1/platos")
 @RequiredArgsConstructor 
-@Slf4j 
-
+@Slf4j
 public class PlatoController {
 
     private final IPlatoService platoService;
