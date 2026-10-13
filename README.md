@@ -30,3 +30,14 @@ Lo que hace distinto a SakuraSushi de los demás restaurantes es su barra de sus
 
 ![](sakura-sushi/docs/images/DiagramaContextoSakuraSushi.drawio.png)
 
+## **4. Diagramas de Componentes**
+### General
+![](sakura-sushi/docs/uml/componentes-general.png)
+### Específico
+![](sakura-sushi/docs/uml/componentes-especifico.png)
+
+## **5. Diagrama de Clases**
+![](sakura-sushi/docs/uml/DiagramaClases.drawio.png)
+
+
+
