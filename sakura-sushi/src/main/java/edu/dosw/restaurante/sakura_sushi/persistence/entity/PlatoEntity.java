@@ -31,8 +31,8 @@ public class PlatoEntity {
     @Column(nullable = false, unique = true, length = 120)
     private String nombre;
 
-    @Column(nullable = false, precision = 10, scale = 2)
-    private BigDecimal precio;
+    @Column(nullable = false)
+    private Double precio;
 
     @Column(nullable = false, length = 60)
     private String categoria;

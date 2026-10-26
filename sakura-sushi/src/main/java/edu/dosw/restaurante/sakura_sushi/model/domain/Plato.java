@@ -15,7 +15,7 @@ public class Plato {
     
     private Long id;
     private String nombre;
-    private BigDecimal precio;
+    private Double precio;
     private String categoria;
     private Boolean disponible;
     private String descripcion;

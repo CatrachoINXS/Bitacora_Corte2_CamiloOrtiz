@@ -21,6 +21,7 @@ public class Pedido {
     public Boolean puedeModificarse() {
         return false;
     }
+
     public void agregarItem(ItemPedido item) {
         this.items.add(item);
     }
